@@ -7,10 +7,10 @@ import logo from "../assets/images/logo.png"
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
-    const toRotate = ["Desarrollo Web", "Aplicaciones Móviles", "Business Intelligence"];
+    const toRotate = ["Desarrollo Web.", "Aplicaciones Móviles.", "Business Intelligence."];
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(300-Math.random() * 100);
-    const period = 1000;
+    const period = 2500;
     useEffect(() =>{
         let ticker = setInterval(()=>{
             tick();
@@ -21,8 +21,9 @@ export const Banner = () => {
 
     const tick = () =>{
         let i = loopNum % toRotate.length;
+        
         let fullText = toRotate[i];
-        let updatedText = isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1)
+        let updatedText = isDeleting ? fullText.substring(0, text.length - 30) : fullText.substring(0, text.length + 30)
         setText(updatedText);
 
         if(isDeleting){
@@ -51,7 +52,7 @@ export const Banner = () => {
                             </span>
                         </p>
 
-                        <p className="wrap">Ofrecemos servicios profesionales de <span className="wrap">{text}</span></p>
+                        <p className="wrap">Ofrecemos servicios profesionales de <span className="wrap wrap_text">{text}</span></p>
                         {/* <button onClick={() => console.log('connect')}>Button <ArrowRightCircle size={25}/></button> */}
                     </Col>
                     {/* <Col className="headder_col" xs={12} md={6} xl={4}>
