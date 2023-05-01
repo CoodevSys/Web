@@ -7,10 +7,10 @@ import logo from "../assets/images/logo.png"
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
-    const toRotate = ["Desarrollo Web", "Aplicaciones Moviles", "Business Intelligence"];
+    const toRotate = ["Desarrollo Web", "Aplicaciones Móviles", "Business Intelligence"];
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(300-Math.random() * 100);
-    const period = 2000;
+    const period = 1000;
     useEffect(() =>{
         let ticker = setInterval(()=>{
             tick();
@@ -47,8 +47,9 @@ export const Banner = () => {
                         <span className="tagline">C O O D E V </span>
                         {/* <h1>{`Coodev is `}<span className="wrap">{text}</span></h1> */}
                         <p><span className="wrap">Coodev es una empresa comprometida a ofrecer
-                        soluciones personalizadas a nuestros clientes, diseñadas para satisfacer sus necesidades especificas de tecnologia. 
-                        </span></p>
+                            soluciones personalizadas a nuestros clientes, diseñadas para satisfacer sus necesidades especificas de tecnologia. 
+                            </span>
+                        </p>
 
                         <p className="wrap">Ofrecemos servicios profesionales de <span className="wrap">{text}</span></p>
                         {/* <button onClick={() => console.log('connect')}>Button <ArrowRightCircle size={25}/></button> */}

@@ -2,7 +2,13 @@ import { Container, Row, Col } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import 'react-multi-carousel/lib/styles.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faWindows } from '@fortawesome/free-brands-svg-icons'
+import { faWindowRestore } from '@fortawesome/free-regular-svg-icons'
+import { faChartPie,faMobile } from '@fortawesome/free-solid-svg-icons'
+import fondo1 from "../assets/images/photo8.jpg"
+import fondo2 from "../assets/images/photo9.jpg"
+
+
+
 /*@ cambios */
 
 export const Skills = () => {
@@ -29,7 +35,9 @@ export const Skills = () => {
 
     return(
         <section className="skill" id="skills">
-            <Container>
+            <div className="background-image-left">
+</div>
+            <Container>            
                 <Row>
                     <Col>
                         <div className="skill-bx">
@@ -39,15 +47,15 @@ export const Skills = () => {
                             <p>Ofrecemos</p>
                             <Carousel responsive={responsive} infinite={true} className="skill-slider">
                                 <div className="item">
-                                    <FontAwesomeIcon icon={faWindows} />
+                                    <FontAwesomeIcon icon={faWindowRestore} />
                                     <h5>Web Development</h5>
                                 </div>
                                 <div className="item">
-                                    <FontAwesomeIcon icon={faWindows} />
+                                    <FontAwesomeIcon icon={faMobile} />
                                     <h5>Movil App</h5>
                                 </div>
                                 <div className="item">
-                                    <FontAwesomeIcon icon={faWindows} />
+                                    <FontAwesomeIcon icon={faChartPie} />
                                     <h5>Business Intelligence</h5>
                                 </div>
                             </Carousel>
@@ -55,6 +63,8 @@ export const Skills = () => {
                     </Col>
                 </Row>
             </Container>
+            
+
         </section>
     );
 }

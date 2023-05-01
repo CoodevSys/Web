@@ -244,6 +244,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
+  opacity: 0.6;
 }
 .banner .tagline {
   font-weight: 700;
@@ -325,15 +326,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Skills Css ************/
 .skill {
-  padding: 0 0 50px 0;
+  padding: 0px 0px 50px 0;
   position: relative;
 }
 .skill-bx {
   background: #151515;
   border-radius: 64px;
   text-align: center;
-  padding: 60px 50px;
+  padding: 120px 100px;
   margin-top: -60px;
+  background: linear-gradient(90.21deg, rgba(9, 56, 83, 0.9) -5.91%, rgba(32, 254, 228, 0.9) 111.58%);
 }
 .skill h2 {
 	font-size: 45px;
@@ -356,9 +358,76 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin: 0 auto 15px auto;
 }
 .background-image-left {
-  top: 28%;
+  top: 0%;
   position: absolute;
   bottom: 0;
-  width: 40%;
+  width: 100%;
+  height: 100%;
   z-index: -4;
+
+  margin-top: 0;
+  background-image: url('./assets/images/photo7.jpg');
+  opacity: 0.35;
+
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+
+@keyframes rotate {
+	100% {
+		transform: rotate(1turn);
+	}
+}
+
+.skill-bx {
+	position: relative;
+	z-index: 0;
+	width: 100%;
+	height: 300px;
+	border-radius: 10px;
+	overflow: hidden;
+	padding: 2rem;
+	
+	&::before {
+		content: '';
+		position: absolute;
+		z-index: -2;
+		left: -50%;
+		top: -50%;
+		width: 200%;
+		height: 200%;
+		background-color: #1a232a;
+		background-repeat: no-repeat;
+		background-position: 0 0;
+		background-image: conic-gradient(transparent, rgba(168, 239, 255, 1), transparent 30%);
+		animation: rotate 4s linear infinite;
+	}
+	
+	&::after {
+		content: '';
+		position: absolute;
+		z-index: -1;
+		left: 6px;
+		top: 6px;
+		width: calc(100% - 12px);
+		height: calc(100% - 12px);
+		background: #000;
+		border-radius: 5px;
+	}
+}
+
+.skill-bx::after {
+	animation: opacityChange 5s infinite linear;
+}
+
+@keyframes opacityChange {
+	50% {
+		opacity:.5;
+	}
+	100% {
+		opacity: 1;
+	}
 }
