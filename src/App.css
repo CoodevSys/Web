@@ -237,8 +237,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Banner Css ************/
 .banner {
   margin-top: 0;
-  padding: 180px 0 250px 0;
-  /* background-image: url('./assets/images/logo.png'); */
+  padding: 300px 0 300px 0;
+  background-image: url('./assets/images/fondo.jfif');
   background-color: rgba(56, 145, 194, 0.8);
   background-color: rgb(16,44,63);
   background-position: top center;

@@ -51,9 +51,9 @@ export const Banner = () => {
                         Ofrecemos servicios profesionales de desarrollo Web, Apps y Business Intelligence.</span></p>
                         {/* <button onClick={() => console.log('connect')}>Button <ArrowRightCircle size={25}/></button> */}
                     </Col>
-                    <Col className="headder_col" xs={12} md={6} xl={4}>
+                    {/* <Col className="headder_col" xs={12} md={6} xl={4}>
                         <img src={logo} alt="headder" className="img_fondo"></img>
-                    </Col>
+                    </Col> */}
                 </Row>
             </Container>
         </section>
