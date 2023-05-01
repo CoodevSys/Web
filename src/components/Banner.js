@@ -7,7 +7,7 @@ import logo from "../assets/images/logo.png"
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
-    const toRotate = ["Web Developer", "Web Designer", "UI/UX Designer"];
+    const toRotate = ["Desarrollo Web", "Aplicaciones Moviles", "Business Intelligence"];
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(300-Math.random() * 100);
     const period = 2000;
@@ -43,12 +43,14 @@ export const Banner = () => {
         <section className="banner" id="home">
             <Container>
                 <Row className="align-items-center text-align-center">
-                    <Col xs={12} md={6} xl={8}>
-                        <span className="tagline">Welcome</span>
+                    <Col xs={12} md={6} xl={7}>
+                        <span className="tagline">C O O D E V </span>
                         {/* <h1>{`Coodev is `}<span className="wrap">{text}</span></h1> */}
-                        <p ><span className="wrap">Coodev es una empresa comprometida a ofrecer
+                        <p><span className="wrap">Coodev es una empresa comprometida a ofrecer
                         soluciones personalizadas a nuestros clientes, diseñadas para satisfacer sus necesidades especificas de tecnologia. 
-                        Ofrecemos servicios profesionales de desarrollo Web, Apps y Business Intelligence.</span></p>
+                        </span></p>
+
+                        <p className="wrap">Ofrecemos servicios profesionales de <span className="wrap">{text}</span></p>
                         {/* <button onClick={() => console.log('connect')}>Button <ArrowRightCircle size={25}/></button> */}
                     </Col>
                     {/* <Col className="headder_col" xs={12} md={6} xl={4}>
