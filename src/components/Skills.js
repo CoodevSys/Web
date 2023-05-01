@@ -3,8 +3,7 @@ import Carousel from "react-multi-carousel";
 import 'react-multi-carousel/lib/styles.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faWindows } from '@fortawesome/free-brands-svg-icons'
-/* cambios */
-
+/*@ cambios */
 
 export const Skills = () => {
 
