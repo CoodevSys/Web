@@ -23,7 +23,7 @@ export const Banner = () => {
         let i = loopNum % toRotate.length;
         
         let fullText = toRotate[i];
-        let updatedText = isDeleting ? fullText.substring(0, text.length - 30) : fullText.substring(0, text.length + 30)
+        let updatedText = isDeleting ? fullText.substring(0, text.length - 30) : fullText.substring(0, text.length + 3)
         setText(updatedText);
 
         if(isDeleting){
@@ -36,7 +36,7 @@ export const Banner = () => {
         }else if(isDeleting && updatedText === ''){
             setIsDeleting(false);
             setLoopNum(loopNum + 1);
-            setDelta(500);
+            setDelta(100);
         }
     }
 
