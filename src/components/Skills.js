@@ -36,10 +36,10 @@ export const Skills = () => {
     return(
         <section className="skill" id="skills">
             <div className="background-image-left">
-</div>
+            </div>
             <Container>            
                 <Row>
-                    <Col>
+                    {/* <Col>
                         <div className="skill-bx">
                             <h2>
                                 Servicios
@@ -60,8 +60,41 @@ export const Skills = () => {
                                 </div>
                             </Carousel>
                         </div>
+                    </Col> */}
+                    <Carousel responsive={responsive} infinite={true} className="skill-slider">  
+                    <Col xs={12} md={6} xl={10}>
+                        <div className="skill-bx">
+                            <h2>
+                                Web Development
+                            </h2>
+                            <div className="item">
+                                <FontAwesomeIcon icon={faWindowRestore} />
+                            </div>
+                        </div>
                     </Col>
+                    <Col xs={12} md={6} xl={10}>
+                        <div className="skill-bx">
+                            <h2>
+                                Movil App
+                            </h2>
+                            <div className="item">
+                                <FontAwesomeIcon icon={faMobile} />
+                            </div>
+                        </div>
+                    </Col>
+                    <Col xs={12} md={6} xl={10}>
+                        <div className="skill-bx">
+                            <h2>
+                                Business Intelligence
+                            </h2>
+                            <div className="item">
+                                <FontAwesomeIcon icon={faChartPie} />
+                            </div>
+                        </div>
+                    </Col>
+                    </Carousel>
                 </Row>
+
             </Container>
             
 
