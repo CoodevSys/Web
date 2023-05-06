@@ -361,7 +361,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 100px 100px 200px 100px;
   height: 40vh;
   width: 100% !important;
-  /* margin-top: -100px; */
   margin-top: 40px;
   background: linear-gradient(35.21deg, rgba(9, 56, 83, 1) -5.91%, rgba(32, 254, 228, 0.9) 111.58%);
   box-shadow: 5px 5px 5px 2px rgba(32, 254, 228, 0.2);

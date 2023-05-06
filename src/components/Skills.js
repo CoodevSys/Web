@@ -68,7 +68,7 @@ export const Skills = () => {
                     
                     
                     <Carousel responsive={responsive} infinite={true} className="skill-slider">  
-                    <Col xs={12} md={6} xl={10}>
+                    <Col xs={2} md={2} xl={10}>
                         <div className="skill-bx">
                             <h2>
                                 Web Development
@@ -78,7 +78,7 @@ export const Skills = () => {
                             </div>
                         </div>
                     </Col>
-                    <Col xs={12} md={6} xl={10}>
+                    <Col xs={2} md={2} xl={10}>
                         <div className="skill-bx">
                             <h2>
                                 Movil App
@@ -88,7 +88,7 @@ export const Skills = () => {
                             </div>
                         </div>
                     </Col>
-                    <Col xs={12} md={6} xl={10}>
+                    <Col xs={2} md={2} xl={10}>
                         <div className="skill-bx">
                             <h2>
                                 Business Intelligence
