@@ -52,7 +52,7 @@ export const Banner = () => {
                             </span>
                         </p>
 
-                        <p className="wrap">Ofrecemos servicios profesionales de <span className="wrap wrap_text">""{text}</span></p>
+                        <p className="wrap">Ofrecemos servicios profesionales de <span className="wrap wrap_text"> {text}</span></p>
                         {/* <button onClick={() => console.log('connect')}>Button <ArrowRightCircle size={25}/></button> */}
                     </Col>
                     {/* <Col className="headder_col" xs={12} md={6} xl={4}>
