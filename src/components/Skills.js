@@ -36,6 +36,7 @@ export const Skills = () => {
     return(
         <section className="skill" id="skills">
             <div className="background-image-left">
+                
             </div>
             <Container>            
                 <Row>
@@ -61,6 +62,11 @@ export const Skills = () => {
                             </Carousel>
                         </div>
                     </Col> */}
+                    <Col xs={12} md={6} xl={12}>
+                        <h2 className="title_services">Servicios</h2>
+                    </Col>
+                    
+                    
                     <Carousel responsive={responsive} infinite={true} className="skill-slider">  
                     <Col xs={12} md={6} xl={10}>
                         <div className="skill-bx">
