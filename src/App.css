@@ -417,14 +417,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   align-items: center;
   font-size: 40px;
 	font-weight: 700;
-  margin-bottom: 80px;
+  margin-bottom: 0px;
   padding: 20px;
   text-align: center;
   color: while;
   border-radius: 20px;
   text-transform: uppercase;
-  text-shadow: 2px 2px 2px 2px rgb(16,44,63);
-  box-shadow: 0 0px 5px 2px rgba(32, 254, 228, 0.2);
+  text-shadow: 2px 5px 2px rgb(63, 126, 151);
 }
 
 
