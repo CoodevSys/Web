@@ -435,7 +435,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 100%;
   height: 100%;
   z-index: -4;
-  background: rgba(255, 255, 255, 0) url(./assets/images/photo7.jpg);
+  /* background: rgba(255, 255, 255, 0) url(./assets/images/photo7.jpg); */
   background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
