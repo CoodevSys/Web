@@ -5,6 +5,8 @@ import photo1 from "../assets/images/photo6.jpg"
 import photo2 from "../assets/images/photo7.jpg"
 import photo3 from "../assets/images/photo8.jpg"
 import photo4 from "../assets/images/photo9.jpg"
+import 'animate.css';
+import TrackVisibility from "react-on-screen";
 
 
 export const Projects = () =>{
@@ -40,13 +42,20 @@ export const Projects = () =>{
         },  
     ]
     return (
-      <section className="project" id="projects">
+      <section className="project" id="projects" >
+      
         <Container>
             <Row>
                 <Col>
-                    <h2>Proyectos</h2>
+                    <TrackVisibility>
+                        {( { isVisible }) =>
+                            <div className={isVisible ? "animate__animated animate__bounce" : ""}>
+                            <h2>Proyectos</h2>
+                        </div>}
+                    </TrackVisibility>
+                    
                     <Tab.Container id="project-tabs" defaultActiveKey="first">
-                        <Nav variant="pills" defaultActivateKey="/home">
+                        <Nav variant="pills"  className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">{/* defaultActivateKey="/home" */}
                             <Nav.Item>
                                 <Nav.Link eventKey="first">PAGINAS WEB</Nav.Link>
                             </Nav.Item>
@@ -101,7 +110,7 @@ export const Projects = () =>{
                                 </Row>
                             </Tab.Pane>
                         </Tab.Content>
-                    </Tab.Container>
+                    </Tab.Container>    
                 </Col>
             </Row>
         </Container>
