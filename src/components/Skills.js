@@ -9,7 +9,7 @@ import fondo2 from "../assets/images/photo9.jpg"
 import 'animate.css';
 import TrackVisibility from "react-on-screen";
 
-
+/*  */
 
 /*@ cambios */
 
